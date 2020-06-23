@@ -1,15 +1,15 @@
 variable "rg_name" {
-    type = string
+    type        = string
     description = "Name of the Resources Group"
 }
 
 variable "serviceplan_name" {
-    type = string
+    type        = string
     description = "Name of the App Service Plan"
 }
 
 variable "appservice_name" {
-    type = string
+    type        = string
     description = "Name of the App Service"
 }
 
