@@ -12,8 +12,8 @@ metadata:
     heritage: {{ .Release.Service }}
 data:
   APPINSIGHTS_INSTRUMENTATIONKEY: {{ .Values.inf.appinsights.id | default "none" }}
-  ApiUrl:  {{.Values.ingress.protocol}}://{{ $apihost }}{{ .Values.inf.ingress.webbff.path }}/v1
-  ApiUrlShoppingCart: {{.Values.ingress.protocol}}://{{ $apihost }}{{ .Values.inf.ingress.cart.path }}  
+  ApiUrl:  https://backend.tailwindtraders.com/webbff/v1
+  ApiUrlShoppingCart: https://backend.tailwindtraders.com/cart-api
   UseB2C: {{ .Values.B2C.UseB2C | quote }}
   REACT_APP_USE_B2C: {{ .Values.B2C.ReactAppUseB2C | quote }}
   B2CAuth__ClientId: {{ .Values.B2C.ClientId | default "none" }} 
